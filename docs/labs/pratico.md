@@ -3,7 +3,7 @@
 As atividades de laboratório demandam que vocês utilizem a placa física, e a entrega é composta de duas frentes:
 
 - Mostrar o projeto funcionando.
-- Código sem qualidade de código.
+- Código livre de erros de qualidade de código.
 
 ## Desenvolvendo
 

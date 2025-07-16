@@ -1,6 +1,19 @@
 ---
-rules_variables_classroom: https://aaa
----
+layout: home
+
+hero:
+  name: "Variáveis" 
+  tagline: "Qualidade de código"
+  actions:
+    - theme: brand
+      text: Link para entrega
+      link: http://github.com 
+    - theme: alt
+      text: "Deadline: xx/08"
+    - theme: alt
+      text: Peso 15% da nota do lab
+      link: /api-examples
+--- 
 
 # Variáveis
 

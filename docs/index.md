@@ -22,4 +22,3 @@ features:
   - title: CI/CD
     details: Disciplina com sistema automatizado de testes
 ---
-

@@ -1,6 +1,19 @@
 ---
-rules_cppcheck_classroom: https://www.github.com/classroom/emb-rules-cppcheck
----
+layout: home
+
+hero:
+  name: "cppcheck" 
+  tagline: "Qualidade de código"
+  actions:
+    - theme: brand
+      text: Link para entrega
+      link: http://github.com
+    - theme: alt
+      text: "Deadline: xx/08"
+    - theme: alt
+      text: Peso 15% da nota do lab
+      link: /api-examples
+--- 
 
 # Cppcheck
 
