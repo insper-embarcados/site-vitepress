@@ -1,6 +1,5 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: home
 
 hero:
   name: "Laboratórios" 
@@ -20,28 +19,30 @@ features:
   - title: Lab 1 - GPIO
     icon: ✅
     details: Entrada e saída digital
-    link: /labs/gpio/
+    link: /labs/gpio
   - title: Lab 2 - IRS
     icon: ➘
     details: Interrupção
-    link: /labs/gpio/
+    link: /labs/gpio
   - title: Lab 3 - Timer
     details: Contabilizando tempo
-    link: /labs/gpio/
+    link: /labs/gpio
 ---
+
+# Laboratórios
 
 Os laboratórios são compostos de duas entregas individuais: uma que deve acontecer até o dia do laboratório (chamada de pré lab) e outro que deve ser iniciada durante a aula (chamada de pra lab).
 
-## Pré lab
+## Lab preparatório
 
 As atividades de pré lab são compostas de duas frentes, uma que trata da qualidade de código em sistemas embarcados, e outro que lida com a parte de programacão do microcontrolador em um ambiente simulado. 
 
 Para saber mais sobre cada uma das frentes, acesse:
 
 - [Qualidade de código](/qualidade/)
-- [Pré lab](/labs/preparatorio)
+- [Exercícios de programação](/labs/preparatorio)
 
-## Pra lab
+## Lab prático
 
 As atividades de laboratório prático demandam que vocês utilizem a placa física e apliquem o que foi estudado nas atividades preparatórias.
 

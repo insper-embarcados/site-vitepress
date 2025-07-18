@@ -1,4 +1,5 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
+import {defineConfig} from '@lando/vitepress-theme-default-plus/config'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,16 +13,34 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Labs', link: '/labs' },
-      { text: 'Material', link: '/material' },
+      { text: 'Consulta', link: '/consulta/' },
+      { text: 'Qualidade de código', link: '/qualidade' },
     ],
     sidebar: {
       '/labs/': [
         {
-          text: 'Labs',
+          text: 'Laboratórios',
           items: [
-            { text: 'Index', link: '/labs/' },
-            { text: 'Preparatório', link: '/labs/preparatorio' },
-            { text: 'Prático', link: '/labs/pratico' }
+            { text: 'Sobre', link: '/labs/' },
+            {
+              items: [
+                { text: 'Preparatório', link: '/labs/preparatorio' },
+                { text: 'Prático', link: '/labs/pratico' },
+              ]
+            },
+            { text: 'Lab 1 - GPIO', link: '/labs/gpio' }
+          ]
+        }
+      ],
+      '/consulta/': [
+        {
+          text: 'Qualidade de código',
+          items: [
+            { text: 'Index', link: '/qualidade/' },
+            { text: 'Regras', link: '/qualidade/rules' },
+            { text: '1 - Cppcheck', link: '/qualidade/cppcheck' },
+            { text: '2 - Variáveis', link: '/qualidade/variables' },
+            { text: '3 - ISR', link: '/qualidade/isr-handler' }
           ]
         }
       ],
@@ -37,10 +56,7 @@ export default defineConfig({
           ]
         }
       ]
-
     },
-
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]

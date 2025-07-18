@@ -1,6 +1,4 @@
 ---
-layout: home
-
 hero:
   name: "Variáveis" 
   tagline: "Qualidade de código"
@@ -15,7 +13,26 @@ hero:
       link: /api-examples
 --- 
 
+
 # Variáveis
+
+::::: center
+:::: third
+::: box-blue 1. Link para entrega 📦
+Acessar [github classroom](https://....)
+:::
+::::
+:::: third
+::: box 2. Deadline
+xx/08
+:::
+::::
+:::: third
+::: box Nota
+15% da nota do laboratório
+:::
+::::
+:::::
 
 Programas para sistemas embarcados devem seguir algumas diretrizes fundamentais de qualidade de código, refletindo as melhores práticas no uso de microcontroladores e da linguagem de programação C. É importante lembrar que um sistema embarcado interage diretamente com o mundo real, onde falhas podem impactar significativamente nossa realidade.
 
@@ -65,11 +82,11 @@ O código anterior viola a regra **1.1** nas duas variáveis ( `a` e `b` ) geran
 
 ![](figs/checker-rule1-1.png)
 
-::: info Pense e responda
 
 Qual alternativa a seguir seria uma solucão válida para corrigir o código?
 
-::: tip Solucão 1
+:::tabs
+=== código a
 - Declara `a` e `b` local e acessa `a` como global
 - Declara `foo` dentro da funcão `main` 
 
@@ -91,10 +108,8 @@ void main(void) {
     }
 }
 ```
-:::
-    
 
-::: tip Solucão 2
+=== código b
 - Declara`a` e `b` local e acessa `a` como global
 
 ``` c 
@@ -117,7 +132,7 @@ void main(void) {
 }
 ```
 
-::: tip Solucão 3
+=== código c
 - Declara `a` e `b` local, e acessa `a` com ponteiro
 
 ``` c 
@@ -138,10 +153,10 @@ void main(void) {
     }
 }
 ```
+:::
     
 ::: details Solucão correta é ...
-
-O código número 3
+O código letra C!
 
 - [ ] Declarar `foo` dentro da funcão `main`.
 - [ ] Declarar a variável `a` como `global`.

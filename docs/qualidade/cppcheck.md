@@ -1,21 +1,28 @@
 ---
-layout: home
-
-hero:
-  name: "cppcheck" 
-  tagline: "Qualidade de código"
-  actions:
-    - theme: brand
-      text: Link para entrega
-      link: http://github.com
-    - theme: alt
-      text: "Deadline: xx/08"
-    - theme: alt
-      text: Peso 15% da nota do lab
-      link: /api-examples
+next:
+  text: Variáveis
+  link: '/qualidade/variables'
 --- 
 
 # Cppcheck
+
+::::: center
+:::: third
+::: box-blue 1. Link para entrega 📦
+Acessar [github classroom](https://....)
+:::
+::::
+:::: third
+::: box 2. Deadline
+xx/08
+:::
+::::
+:::: third
+::: box Nota
+15% da nota do laboratório
+:::
+::::
+:::::
 
 ::: tip Rule 1.0
 O código não deve possuir erros detectados pelo `cppcheck`.
