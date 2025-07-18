@@ -36,12 +36,12 @@ Agora iremos aprender sobre os conceitos básicos do microcontrolador. Para isso
 ::::: center
 :::: third
 :::card 📖 Leitura 1
-[O que é delay e como ele funciona](/perifericos/delay)
+[O que é delay e como ele funciona](/consulta/delay)
 :::
 ::::
 :::: third
 :::card  📖 Leitura 2
-[Detalhes sobre o GPIO](/perifericos/gpio)
+[Detalhes sobre o GPIO](/consulta/gpio)
 :::
 ::::
 :::: third
