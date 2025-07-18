@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Computação Embarcada",
   description: "Sistemas embarcados movem o mundo",
   base: '/docs/',
+  base: "/site-vitepress/",
   themeConfig: {
     search: {
       provider: 'local'
