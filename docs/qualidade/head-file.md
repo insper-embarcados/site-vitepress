@@ -52,7 +52,7 @@ O diagrama a seguir ilustra como devemos tratar os diferentes tipos de arquivos:
 
 ![](figs/head-file-1.png)
 
-Estes arquivos quando compilados devem gerar [arquivos .o]()[^1], reparem que o arquivo `foo.c` virou um objeto `foo.o`, isso otimiza todo o processo de compilação, o gcc não precisa recompilar o `foo.c` se não ouve mudancas nele.
+Estes arquivos quando compilados devem gerar [arquivos .o]()[^1], reparem que o arquivo `foo.c` virou um objeto `foo.o`, isso otimiza todo o processo de compilação, o gcc não precisa recompilar o `foo.c` se não houve mudanças nele.
 
 ![](figs/head-file-2.png){width=100}
 
@@ -175,7 +175,7 @@ int bar(int b){
 ## Keyword *extern*
 	
 !!! tip
-    Para que seu Head file acesse uma variável global que está na **main.c**, você precisa adicionar a keyword **extern** nessa variável dentro do arquivo head **.c**:
+    Para que seu Head file acesse uma variável global que está na **main.c**, você precisa adicionar a keyword **extern** nessa variável dentro do arquivo head **.h**:
 	
 	https://www.geeksforgeeks.org/understanding-extern-keyword-in-c/
 		

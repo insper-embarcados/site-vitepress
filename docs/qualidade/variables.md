@@ -36,7 +36,7 @@ xx/08
 
 Programas para sistemas embarcados devem seguir algumas diretrizes fundamentais de qualidade de código, refletindo as melhores práticas no uso de microcontroladores e da linguagem de programação C. É importante lembrar que um sistema embarcado interage diretamente com o mundo real, onde falhas podem impactar significativamente nossa realidade.
 
-Existem varias normas estabelecidas para orientar os desenvolvedores na criação de firmwares mais confiáveis, abordando inclusive problemas associados à especificação da linguagem C. 
+Existem várias normas estabelecidas para orientar os desenvolvedores na criação de firmwares mais confiáveis, abordando inclusive problemas associados à especificação da linguagem C. 
 
 ::: info underfined behaviors
 Os comportamentos indefinidos (undefined behaviors) na linguagem de programação C ocorrem quando o padrão da linguagem não especifica como o programa deve se comportar em determinadas circunstâncias. Isso pode ser resultado de ações como: divisão por zero, acesso a ponteiros nulos, estouro de buffer, entre outros. Esses comportamentos podem levar a resultados imprevisíveis e causar problemas de segurança ou falhas no programa. Para minimizar tais riscos, é importante seguir as melhores práticas de programação e estar atento a possíveis comportamentos indefinidos ao escrever e revisar seu código.
@@ -50,7 +50,7 @@ Neste roteiro não vamos nos atentar a formatacão do código (nomenclatura, est
 Somente usar variáveis globais para passar informacoes de uma interrupcão (ISR) para a funcão `main`. 
 :::
 
-Em projetos mais complexos, essa regra pode ser flexibilizada, mas isso deve ser abordada com cautela e planejamento. Devido ao tempo limitado disponível para desenvolvermos boas práticas com vocês, estamos  o uso de variáveis globais apenas nessas situações. 
+Em projetos mais complexos, essa regra pode ser flexibilizada, mas isso deve ser abordado com cautela e planejamento. Devido ao tempo limitado disponível para desenvolvermos boas práticas com vocês, estamos limitando o uso de variáveis globais apenas nessas situações. 
 
 ### Exemplo
 
@@ -83,7 +83,7 @@ O código anterior viola a regra **1.1** nas duas variáveis ( `a` e `b` ) geran
 ![](figs/checker-rule1-1.png)
 
 
-Qual alternativa a seguir seria uma solucão válida para corrigir o código?
+Qual alternativa a seguir seria uma solução válida para corrigir o código?
 
 :::tabs
 === código a
@@ -171,7 +171,7 @@ Vamos praticar um pouco e corrigir as regras básicas de qualidade de código e 
 - Analise o log do actions e verifique que o cppcheck executou e encontrou alguns erros.
 - Corrija o código `rules_basic_variable.c` e verifique se os erros ainda continuam.
 
-Dica: reescreva a funcão `foo` para um dos casos a seguir:
+Dica: reescreva a função `foo` para um dos casos a seguir:
 
 - `int foo(int a)`
 - `void foo(int *a)`

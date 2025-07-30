@@ -17,7 +17,7 @@ Interrupção é normalmente um evento gerado pelo hardware e que por consequên
 !!! tip "Rule 1.3"
     Somente as variáveis globais e modificadas durante a ISR devem ser globais.
     
-Essas regras pode ser flexibilizada quando desejamos acessar periféricos e memórias externas, os valores desses endereços de memória são alterados sem o conhecimento do compilador.
+Essas regras podem ser flexibilizadas quando desejamos acessar periféricos e memórias externas, os valores desses endereços de memória são alterados sem o conhecimento do compilador.
 
 ## Exemplo
 
@@ -49,7 +49,7 @@ void main(void) {
 }
 ```
 
-O exemplo viola as regra **1.1** e **1.2** nas duas variáveis ( `f_bnt` e `cnt` ) gerando o seguinte erro:
+O exemplo viola as regras **1.1** e **1.2** nas duas variáveis ( `f_btn` e `cnt` ) gerando o seguinte erro:
 
 ![](figs/checker-rule-isr-volatile.png)
 
@@ -67,4 +67,4 @@ Vamos praticar um pouco e corrigir as regras básicas de qualidade de código e 
 
 1. Crie um repositório com o código exemplo acessando o github classroom
 1. Analise o log do actions e verifique que o checker executou e encontrou alguns erros.
-1. Corrigir o código e verificar se ainda continuamos com erros.
+1. Corrija o código e verifique se ainda continuamos com erros.

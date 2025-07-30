@@ -76,4 +76,4 @@ Agora vamos corrigir os códigos com erro, execute na ordem:
 1. `main_isr_kiss.c`
 1. `main_isr_practice.c`
 
-Dica: Crie uma `flag` para indicando que o btn foi pressionado e então reescreva o código na função `main`. 
+Dica: Crie uma `flag` para indicar que o btn foi pressionado e então reescreva o código na função `main`.

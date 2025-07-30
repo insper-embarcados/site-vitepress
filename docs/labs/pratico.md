@@ -13,7 +13,7 @@ Para desenvolver as atividades práticas será necessário utilizar a placa de d
 
 ## Validando prática
 
-Vocês possuem uma semana para terminarem o lab e apresentar o projeto montado e funcionando para alguém da equipe. Consultar **horários disponíveis** para apresentar o laboratório.
+Vocês possuem uma semana para terminar o lab e apresentar o projeto montado e funcionando para alguém da equipe. Consultar **horários disponíveis** para apresentar o laboratório.
 
 
 | Horário         | Segunda-feira | Terça-feira | Quarta-feira | Quinta-feira | Sexta-feira |
@@ -27,7 +27,7 @@ Lembrando que:
 - Os laboratórios práticos possuem nota binária: Um ou Zero
 - Para validar a entrega vocês devem:
     - Entregar código no github (sem falhas de qualidade de código)
-    - Apresentar protótipo funcionando até data limite
+    - Apresentar protótipo funcionando até a data limite
 
 ## Validando qualidade de código
 

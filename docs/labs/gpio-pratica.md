@@ -21,7 +21,7 @@ xx/08
 
 Nesse laboratório vocês irão aplicar os conceitos do pré lab (leitura e acionamento de um pino) para controlar um motor de passos. 
 
-A ideia geral é que vocês possuam um botão um LED e o motor de passos conectado na placa, toda vez que o botão for pressionado o LED deve acender e o motor girar 360 graus para uma direção de sua escolha. O sistema deve funcionar alimentando por bateria (não aceitaremos demos com ele ligado no PC).
+A ideia geral é que vocês possuam um botão, um LED e o motor de passos conectado na placa, toda vez que o botão for pressionado o LED deve acender e o motor girar 360 graus para uma direção de sua escolha. O sistema deve funcionar alimentado por bateria (não aceitaremos demos com ele ligado no PC).
 
 ![](imgs/lab-gpio-diagrama.png)
 
@@ -29,7 +29,7 @@ A ideia geral é que vocês possuam um botão um LED e o motor de passos conecta
 
 Para isso, vocês vão precisar de:
 
-| Bill of Material                | Valor   |
+| Bill of Materials               | Valor   |
 |---------------------------------|---------|
 | 1x Rasp pico                    | R$ 40   |
 | 1x debug-probe                  | R$ 120  |
@@ -75,5 +75,5 @@ Não sabe ligar um botão na placa? Acesse:
 Gostou e quer fazer mais? Que tal:
 
 - Colocar mais um botão e fazer girar para o outro lado
-- Enquanto estiver girado e o botão for apertado, pare. Se apertado novamente, termine a rotaćão.
-- Adicione mais LEDs e crie uma árvore de natal! 
+- Enquanto estiver girando e o botão for apertado, pare. Se apertado novamente, termine a rotação.
+- Adicione mais LEDs e crie uma árvore de natal!

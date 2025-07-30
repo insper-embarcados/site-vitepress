@@ -48,7 +48,7 @@ Agora iremos aprender sobre os conceitos básicos do microcontrolador. Para isso
 ::::
 :::::
 
-Agora que vocês já enetenderam um pouco sobre o delay/sleep e o GPIO vamos praticar um pouco.
+Agora que vocês já entenderam um pouco sobre o delay/sleep e o GPIO vamos praticar um pouco.
 
 ::::: center
 :::: third
@@ -64,7 +64,7 @@ Acessar [exercícios](https://classroom)
 
 ## Prática  <Badge type="info" text="50% da nota de lab" /> 
 
-Entrega que devem ser **inicializada** na aula de laboratório e entregue até o próximo lab. 
+Entrega que deve ser **iniciada** na aula de laboratório e entregue até o próximo lab. 
 
 ::::: center
 :::: third
