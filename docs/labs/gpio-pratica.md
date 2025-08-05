@@ -1,20 +1,22 @@
 # GPIO - Prática
 
 ::::: center
-:::: third
-::: box-blue 1. Link para entrega 📦
-Acessar [github classroom](https://....)
+:::: third 
+::: box-blue 1. Link 
+[github classroom](https://....)
 :::
 ::::
 :::: third
-::: box 2. Deadline
-xx/08
+::: box-yellow 2. Entrega final
+Enviar no PrairiLearn
 :::
 ::::
 :::: third
 ::: box Nota
 50% da nota do laboratório
 :::
+::::
+:::: third
 ::::
 :::::
 

@@ -37,7 +37,6 @@ export default defineConfig({
         {
           text: 'Material de consulta',
           items: [
-            { text: 'Sobre', link: '/consulta/index' },
             { text: 'Delay', link: '/consulta/delay' },
             { text: 'GPIO', link: '/consulta/gpio' }
           ]
@@ -57,7 +56,7 @@ export default defineConfig({
       ]
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/insper-embarcados' }
     ]
   }
 })
