@@ -18,14 +18,16 @@ xx/08
 ::::
 :::::
 
-
 Nesse laboratório vocês irão aplicar os conceitos do pré lab (leitura e acionamento de um pino) para controlar um motor de passos. 
 
 A ideia geral é que vocês possuam um botão, um LED e o motor de passos conectado na placa, toda vez que o botão for pressionado o LED deve acender e o motor girar 360 graus para uma direção de sua escolha. O sistema deve funcionar alimentado por bateria (não aceitaremos demos com ele ligado no PC).
 
+:::tabs
+== Montagem
 ![](imgs/lab-gpio-diagrama.png)
-
+== Vídeo
 <YouTube id="xx529vCDUPM"/>
+:::
 
 Para isso, vocês vão precisar de:
 

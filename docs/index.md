@@ -8,17 +8,25 @@ hero:
   tagline: "Sistemas embarcados movem o mundo"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Sobre o curso
+      link: /about
     - theme: alt
       text: API Examples
       link: /api-examples
+  image:
+    src: /logo.svg
+    alt: Insper
 
 features:
   - title: Raspberry pi pico
     details: Kit de desenvolvimento utilizado no curso
-  - title: Freertos
-    details: Sistema operacional de tempo real (RTOS)
-  - title: CI/CD
+  - title: 
+    details: Kit de desenvolvimento utilizado no curso
+  - title: Testes
     details: Disciplina com sistema automatizado de testes
+  - title: Freertos
+    details: O curso ensina sistema operacional de tempo real (RTOS)
+  - title: Qualidade de código
+    details: O curso possui um sistema de qualidade de código
 ---
+

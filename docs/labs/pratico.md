@@ -11,6 +11,13 @@ Para desenvolver as atividades práticas será necessário utilizar a placa de d
 
 ![](/pico/imgs/pico-probe.png){width=400}
 
+## Validando qualidade de código
+
+As entregas práticas também devem respeitar a qualidade de código, os repositórios que serão cirados no classroom vão estar com a verifação ativada.
+
+![](imgs/lab_pra_actions.png)
+
+
 ## Validando prática
 
 Vocês possuem uma semana para terminar o lab e apresentar o projeto montado e funcionando para alguém da equipe. Consultar **horários disponíveis** para apresentar o laboratório.
@@ -19,8 +26,7 @@ Vocês possuem uma semana para terminar o lab e apresentar o projeto montado e f
 | Horário         | Segunda-feira | Terça-feira | Quarta-feira | Quinta-feira | Sexta-feira |
 |-----------------|---------------|-------------|--------------|--------------|-------------|
 | **09:45-12:00** | Marco         |             |              |              | Corsi       |
-| **18:00-19:00** |               | Daniel      | Daniel       | Daniel       |             |
-
+| **18:30-21:00** |               |             | Daniel       |              | Daniel      |
 
 Lembrando que:
 
@@ -29,8 +35,10 @@ Lembrando que:
     - Entregar código no github (sem falhas de qualidade de código)
     - Apresentar protótipo funcionando até a data limite
 
-## Validando qualidade de código
+## Enviando para avaliação 
 
-Você deve obter algo como:
+De forma similar ao laboratório preparatório, o prático também deve ser enviado ao PL, nesse caso são duas entregas. Uma que indica que o firmeware não possui erros de qualidade de código, a entrega da atividade prática estará bloqueado enquanto a qualidade de código não for validada, como indicado a seguir:
 
-![](imgs/lab_pra_actions.png)
+![](imgs/pl-pratica.png)
+
+A segunda etapa da entrega é conseguir o badget de avaliação de alguém da equipe técnica. A entrega só sera confirmada quando vocês subirem uma imagem da placa com o badget de avaliação.

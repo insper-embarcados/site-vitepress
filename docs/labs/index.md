@@ -49,3 +49,9 @@ As atividades de laboratório prático demandam que vocês utilizem a placa fís
 Para saber mais sobre a atividade prática acesse:
 
 - [Pra lab](/labs/pratico)
+
+## Funcionamento
+
+![](imgs/sobre.png)
+
+Todos os códigos serão desenvolvido no computador do aluno e testados automáticamente no github. Todas as entregas devem ser realizados no github e publicadas no PrairieLearn.
