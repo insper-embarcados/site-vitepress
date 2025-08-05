@@ -6,6 +6,9 @@ export default defineConfig({
   title: "Computação Embarcada",
   description: "Sistemas embarcados movem o mundo",
   base: "/site-vitepress/",
+  markdown: {
+      math: true
+  },
   themeConfig: {
     logo: '/logo_2.png',
     search: {
@@ -42,7 +45,15 @@ export default defineConfig({
             { text: 'SDK', link: 'https://www.raspberrypi.com/documentation/pico-sdk/index_doxygen.html' },
             { text: 'Delay', link: '/consulta/delay' },
             { text: 'GPIO', link: '/consulta/gpio' },
-            { text: 'GPIO IRQ', link: '/consulta/gpio-irq' }
+            { text: 'GPIO IRQ', link: '/consulta/gpio-irq' },
+            { text: 'Timer', link: '/consulta/timer' },
+            { text: 'RTC', link: '/consulta/rtc' },
+            { text: 'Memória Flash', link: 'https://kevinboone.me/picoflash.html'},
+            { text: 'ADC', link: '/consulta/adc' },
+            { text: 'PWM', link: '/consulta/pwm' },
+            { text: 'I2C', link: '/consulta/i2c' },
+            { text: 'DMA', link: '/consulta/dma' },
+            { text: 'UART', link: '/consulta/uart' },
           ]
         }
       ],
