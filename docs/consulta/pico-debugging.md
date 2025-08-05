@@ -1,11 +1,11 @@
 # Programando
 
 !!! info ""
-    Os passos a seguir só são possíves poís estamos fornecendo um projeto no vscode já pré configurado. 
+    Os passos a seguir só são possíveis pois estamos fornecendo um projeto no vscode já pré-configurado. 
 
-No curso iremos usar o [debug-probe](https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.html), um dispositivo criado para podermos gravar, depurar e ter acesso a saída uart da raspberrypi pi pico.
+No curso iremos usar o [debug-probe](https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.html), um dispositivo criado para podermos gravar, depurar e ter acesso à saída UART da Raspberry Pi Pico.
 
-Primeiro, faca a conexão como indicado a seguir:
+Primeiro, faça a conexão como indicado a seguir:
 
 !!! info
     Note a necessidade de dois cabos USB!

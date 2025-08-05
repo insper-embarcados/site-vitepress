@@ -4,7 +4,7 @@ UART é um dos protocolos mais utilizados para comunicação em sistemas digitai
 
 Aplicações práticas:
 
-- Debugging: UART ajuda na capturação de mensagens do sistemas e consequentemente ajuda na solução de bugs do sistema.
+- Debugging: UART ajuda na captura de mensagens do sistema e consequentemente ajuda na solução de bugs do sistema.
 - Teste: Verificação de produtos antes de saírem da linha de produção buscando uma melhor qualidade para o usuário final. 
 - Podemos utilizar UART para conectar com módulos bluetooth e também com módulos de GPS.
 
@@ -16,12 +16,12 @@ Vantagens do UART:
 
 Desvantagens do UART:
 
-- O data frame é limitado 8 bits.
+- O data frame é limitado a 8 bits.
 - O Baud Rate do dispositivo que transmite e do que recebe devem ser o mesmo.
 
 ## Na prática
 
-A principal utilização de um UART para transmissão e recebimento de dados está demonstrado na Figura 1, nela é possível ver duas UART diferentes, e entre elas há uma comunicação bidirecional, atraveś dos pinos RX e TX podemos transferir neste caso até 1 byte de informações. 
+A principal utilização de um UART para transmissão e recebimento de dados está demonstrada na Figura 1, nela é possível ver duas UART diferentes, e entre elas há uma comunicação bidirecional, através dos pinos RX e TX podemos transferir neste caso até 1 byte de informações. 
 
 Figura 1 - Transmissão e recepção UART 
 
@@ -37,17 +37,17 @@ Figura 2 - Bits protocolo UART
 
 - **Start Bit**: Quando **não** está transmitindo, o UART fica em nível lógico alto, e **quando transmite** o UART muda de nível lógico alto para nível lógico baixo. O UART que receberá os dados vai detectar a mudança de HIGH para LOW voltage de quem está transmitindo e começará a leitura dos bits precisamente de acordo com o baud rate. 
 
-- **Paridade**: O Bit de Paridade serve para checar se algum bit foi alterado durante a transmissão. Os bits podem mudar por radiação elegromagnética, baud rates diferentes ponta-a-ponta, longa distâncias de transmissão, entre outros motivos. 
+- **Paridade**: O Bit de Paridade serve para checar se algum bit foi alterado durante a transmissão. Os bits podem mudar por radiação eletromagnética, baud rates diferentes ponta-a-ponta, longas distâncias de transmissão, entre outros motivos. 
 **Se o Bit de paridade for 0, o número de bits 1 no dataframe deve ser um valor par**. 
-**Se o Bit de paridade for 1, o número de bits 1 no dataframe deve ser um valor ímpar**
+**Se o Bit de paridade for 1, o número de bits 1 no dataframe deve ser um valor ímpar**.
 
 - **Stop Bits**: Para notificar o fim do pacote, a UART envia no final os Stop Bits, que servem para identificar o final da transmissão, para tal o Stop Bit com 1 modifica o estado de transmissão de dados da UART e a mesma para a transmissão em seguida. O Stop Bits pode ter até dois bits de parada.
 
-- **Data Frame**: Data Frame é o trecho que contém os dados a serem transmitidos, ele pode ter tamanho de até 8 bits. Na maioria dos casos os dados são enviado com o ***Least Significant Bit** primeiro.
+- **Data Frame**: Data Frame é o trecho que contém os dados a serem transmitidos, ele pode ter tamanho de até 8 bits. Na maioria dos casos os dados são enviados com o ***Least Significant Bit** primeiro.
 
 ### Exemplo de transmissão:
 
-A figura a seguir demonstramos a transferência de 2 pacotes de dados:
+A figura a seguir demonstra a transferência de 2 pacotes de dados:
 
 ![uart_transfering](imgs/rp2040-uart-exampletransmission.png)
 
@@ -56,12 +56,12 @@ A figura a seguir demonstramos a transferência de 2 pacotes de dados:
 - O segundo pacote contendo **0x67** hexadecimal, que é igual a **01100111** em binário e que em ASCII é o equivalente ao símbolo **g**.
 
 Neste caso o **LSB** é utilizado, então o primeiro dado a ser enviado é o bit menos significativo, e o último é o **MSB**, o bit com maior valor significativo.
-Checando os Bits do data frame e o bit da paridade, vemos que não obtivemos perca de pacotes nas transmissões.
+Checando os Bits do data frame e o bit da paridade, vemos que não obtivemos perda de pacotes nas transmissões.
 Observamos também que o data frame começou a ser transmitido depois que o Start Bit mudou de 1 para 0.
 E finalmente, quando tivemos o Stop Bit, neste caso dois, finalizamos a primeira transferência e iniciamos a outra.
 Se tivermos no dispositivo receptor UART algo que convertesse os bits recebidos para caracteres, teríamos recebido os caracteres **á** e **g** em sequência.
 
-## RP2350
+## RP2040
 
 No microcontrolador que estamos utilizando - o RP2040 -, conseguimos utilizar até duas instâncias do periférico UART. Na figura 4 é demonstrado o periférico UART da RP2040, onde há a localização do mesmo dentro do chip.
 
@@ -72,7 +72,7 @@ No microcontrolador que estamos utilizando - o RP2040 -, conseguimos utilizar at
 Será abordado neste tópico algumas funções essenciais do nosso **SDK RP2040** para utilizarmos o **periférico UART**.
 
 ```c
-    uart_init(art_inst_t * uart, uint baudrate)
+    uart_init(uart_inst_t * uart, uint baudrate)
 ```
 
 - Inicializa a UART e seleciona por default:
@@ -100,10 +100,10 @@ gpio_set_function(uint gpio, enum gpio_function fn)
     uart_putc_raw (uart_inst_t * uart, char c)
 ```
 
-- Escreve apenas um caracter para ser transmitido via UART sem qualquer conversão.
+- Escreve apenas um caractere para ser transmitido via UART sem qualquer conversão.
 - Possui dois argumentos:
-    - O primeiro é a instância (uart0 ou uart1) no qual o caracter será transmitido.
-    - O segundo é o caracter que será enviado.
+    - O primeiro é a instância (uart0 ou uart1) na qual o caractere será transmitido.
+    - O segundo é o caractere que será enviado.
 
 ```c
 uart_puts (uart_inst_t * uart, const char * s)
@@ -111,7 +111,7 @@ uart_puts (uart_inst_t * uart, const char * s)
 
 - Transmite uma string via UART com conversão CR/LF.
 - Possui dois argumentos:
-    - O primeiro é a instância (uart0 ou uart1) no qual o caracter será transmitido.
+    - O primeiro é a instância (uart0 ou uart1) na qual o caractere será transmitido.
     - O segundo argumento é a string a ser enviada.
 
 
@@ -119,10 +119,10 @@ uart_puts (uart_inst_t * uart, const char * s)
 uart_putc (uart_inst_t * uart, char c)
 ```
 
-- Transmite um caracter via UART com conversão CR/LF opcional.
+- Transmite um caractere via UART com conversão CR/LF opcional.
 - Possui dois argumentos:
-    - O primeiro é a instância (uart0 ou uart1) no qual o caracter será transmitido.
-    - O segundo é o caracter a ser enviado.
+    - O primeiro é a instância (uart0 ou uart1) na qual o caractere será transmitido.
+    - O segundo é o caractere a ser enviado.
  
 ## SDK
 Para usar o UART você deve modificar o `CMakeLists.txt` adicionando `hardware_uart` no `target_link_libraries`:

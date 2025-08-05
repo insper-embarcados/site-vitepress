@@ -14,41 +14,33 @@ DMA (Direct Memory Access) é um controlador especializado em transferir dados, 
 
 O DMA não é uma coisa nova...<br><br>
 
-- Foi introduzido inicialmente em computadores de mainframe entre os anos de 1950 - 1970. Inicialmente era um simples bloco com mecanismo para mover dados entre um dispositivo e uma memória.<br>
+- Foi introduzido inicialmente em computadores mainframe entre os anos de 1950 - 1970. Inicialmente era um simples bloco com mecanismo para mover dados entre um dispositivo e uma memória.<br>
 
-- Nos anos 80, dado a comercialização de computadores pessoais, o DMA tornou-se mais e mais comum em sistemas com periféricos, tal como drivers de memória.<br>
+- Nos anos 80, devido à comercialização de computadores pessoais, o DMA tornou-se mais e mais comum em sistemas com periféricos, tal como drivers de memória.<br>
 
 - Nos anos 90, com alta nas aplicações na área de multimídia e internet, surgiram demandas por taxas de transferência de dados mais rápidas. Assim o DMA foi introduzido com foco em otimizar a transferência de dados e reduzir a latência.<br>
 
 - Nos anos 2000, avanços na arquitetura envolvendo os barramentos do computador, tais como o surgimento de tecnologias como o PCI e PCIe, ocasionaram uma melhor comunicação entre dispositivos e a CPU.<br>
 
-- No ano de 2010, dado a emergência de computação paralela e processadores multi-core, os controladores DMA foram otimizados para processamento multi-threading.<br>
+- No ano de 2010, dado o surgimento da computação paralela e processadores multi-core, os controladores DMA foram otimizados para processamento multi-threading.<br>
 
 - Entre 2010 e 2020, com o destaque do IoT (Internet of Things) e sistemas embarcados, os controladores DMA foram adotados como requisito para sistemas de baixo consumo.
 </details>
 
-
 ### Vantagens do DMA:
 
 - Velocidade de transferência de dados mais rápida que na CPU.
-
-- Reduz o trabalho da CPU, deixando ela disponível para focar em outras tarefas.
-
-- Múltiplos canais DMA trabalham simultaneamente o que melhora a performance do sistema em termos de fluxo de dados.
+- Reduz o trabalho da CPU, deixando-a disponível para focar em outras tarefas.
+- Múltiplos canais DMA trabalham simultaneamente, o que melhora a performance do sistema em termos de fluxo de dados.
 
 O controlador DMA pode reduzir o consumo de energia, permitindo que a CPU permaneça em modo de baixo consumo até que haja uma interrupção externa por parte de algum periférico.
 
 ### Desvantagens do DMA:
 
 - Configurações de DMA não são sempre compatíveis entre diferentes hardwares.
-
 - Dificuldades quando estamos escrevendo numa memória que contém tanto a fonte como o destino dos dados.
-
-- Como a DMA toma conta do barramento de memória para transferência de dados, às vezes a CPU tem que esperar o controlador DMA completar sua tarefa.
-
-- Em alguns dos dispositivos pode haver conflito de memória quando múltiplos dispositivos tentarem usar o DMA simultaneamente.
-
-
+- Como o DMA toma conta do barramento de memória para transferência de dados, às vezes a CPU tem que esperar o controlador DMA completar sua tarefa.
+- Em alguns dispositivos pode haver conflito de memória quando múltiplos dispositivos tentam usar o DMA simultaneamente.
 
 ## RP2040 / PICO
 
@@ -61,17 +53,13 @@ Abaixo há a descrição do fluxo de dados utilizando o controlador DMA e també
 
 ![rp2040-dma](imgs/dma-memtoper.gif)
 
-
 - Periférico para memória: Neste modo, o periférico manda um sinal para o DMA quando os dados são recebidos. O DMA lê os dados do periférico por meio do método FIFO, e então escreve os mesmos em um array na RAM do microcontrolador.
 
 ![rp2040-dma](imgs/dma-pertomem.gif)
 
-
 - Memória para memória: O DMA transfere dados entre dois buffers na RAM.
 
 ![rp2040-dma](imgs/dma-memtomem.gif)
-
-
 
 ### Componentes Envolvidos:
 Analisando a estrutura do nosso microcontrolador RP2040 na Figura 1, observamos que o DMA está conectado diretamente ao Bus Fabric, cuja função é fazer a comunicação entre os componentes da RP2040.
@@ -88,23 +76,15 @@ Figura 2 - RP2040 Bus Fabric
 
 ![rp2040-bus-fabric](imgs/rp2040-bus-fabric.png "Figura 2")
   
-
-
-
 Abaixo, na figura 3, é possível observar a estrutura interna do DMA. O mesmo possui conexões separadas de leitura e escrita que são ligadas diretamente ao Bus Fabric, e realizam a transferência de dados. **A taxa de transferência de dados através de um DMA é superior ao que um dos processadores do RP2040 conseguiria realizar**.
 
 - As conexões de leitura e escrita são ligadas diretamente ao Bus Fabric, através do AHB-lite Read Master e AHB-lite Write Master.
-
 - Internamente no DMA é processado o endereço de origem e destino dos dados.
-
 - Para controle e verificação do status das transferências de dados com o DMA é necessário manipular seus registradores específicos para cada ação. Caso queira saber mais sobre os registradores do DMA, acesse: [DMA Registers](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=103)
-
 
 Figura 3 - DMA
 
 ![dma_intern](imgs/dma_intern.png "Figura 3")
-
-
 
 ### Modos de Operação do DMA utilizando a RP2040:
 
@@ -112,10 +92,6 @@ O DMA pode operar como leitura e escrita, sendo que na RP2040 o limite de leitur
 Cada um dos 12 canais tem seu próprio registrador de controle e status, no qual o software pode programar e monitorar o progresso da transferência de dados dos canais. Quando vários canais estão ativos ao mesmo tempo, o DMA divide a largura de banda igualmente entre os canais.
 
 O tamanho de transferência pode ser 32, 16 ou 8 bits, e necessita ser configurado apenas uma vez por canal.
-
-
-
-
 
 ## SDK e Praticando
 
@@ -137,9 +113,7 @@ E adicionar no headfile:
 Para treinar o uso do DMA, vamos fazer um pouco diferente desta vez:
 
 1. Rode o código **hello_dma.c** da seção **Snippets**.
-
 2. Reserve um tempo para tentar entendê-lo.
-
 3. Por final leia a seção **Desvendando o código: hello_dma.c**.
 
 ### Snippets

@@ -12,7 +12,7 @@ Conversor Analógico-Digital (ADC) é um hardware capaz de converter um valor an
 Os valores usados no texto são referentes ao ADC do nosso RP2040, mas podem variar se forem usar outro uC.
 ::: 
 
-A resolução do sinal vai implicar na quantização do sinal, quantização é o processo de convertermos um valor que é constante em amplitude em um valor que é discreto em amplitude. Por exemplo, se o nosso ADC foi configurado para ler um valor entre [0, 3.3]V e ele possui, por exemplo, 12 bits de resolução, isso vai implicar que cada bit equivale a:
+A resolução do sinal vai implicar na quantização do sinal. Quantização é o processo de convertermos um valor que é contínuo em amplitude em um valor que é discreto em amplitude. Por exemplo, se o nosso ADC for configurado para ler um valor entre [0, 3.3]V e ele possui, por exemplo, 12 bits de resolução, isso vai implicar que cada bit equivale a:
 
 $bit = \frac{3.3 \, V}{2^{12}} = 0.8 \, mV$  
 
@@ -22,7 +22,7 @@ O gráfico a seguir detalha o processo de quantização:
 
 >   Ref: [Understanding Analog-to-Digital Converters: Deciphering Resolution and Sampling Rate](https://www.allaboutcircuits.com/technical-articles/understanding-analog-to-digital-converters-deciphering-resolution-and-sampl/)
 
-Mas as coisas não são tão simples assim, a quantização está sujeita a ruído, que aparece na forma do **ENOB**, no caso de um ENOB de por exemplo `8.7` bits, isso significa que apenas os 8 bits mais significativos possuem um valor "limpo", isso limita a nossa resolução de `0.8mV` para:
+Mas as coisas não são tão simples assim, a quantização está sujeita a ruído, que aparece na forma do **ENOB**. No caso de um ENOB de, por exemplo, `8.7` bits, isso significa que apenas os 8 bits mais significativos possuem um valor "limpo", isso limita a nossa resolução de `0.8mV` para:
 
 $$bit = \frac{3.3 \, V}{2^{8}} = 12 \, mV$$
 
@@ -34,7 +34,7 @@ Nem tudo está perdido, se aplicarmos um filtro no sinal podemos remover o ruíd
 
 Ao realizarmos uma amostragem de um sinal analógico devemos nos preocupar em realizar uma amostragem periódica no tempo (a matemática fica mais fácil com isso), isso significa que o tempo entre uma amostragem e outra deve ser constante. Além disso, temos que lembrar do teorema de Nyquist, que diz que um sinal analógico deve ser amostrado pelo menos no dobro da frequência máxima (lembra do Fourier?) de um sinal; na prática, esse valor deve ser muito maior que o dobro da frequência máxima.
 
-## RP2350
+## RP2040
 
 O nosso microcontrolador possui um ADC com as seguintes características: 
 
@@ -52,7 +52,7 @@ Na Pico, os pinos do ADC são: `GP28`, `GP27` e `GP26`. Notem que a entrada `3` 
 
 ## SDK
 
-Para usar o PWM você deve modificar o `CMakeLists.txt` adicionando `hardware_adc` no `target_link_libraries`:
+Para usar o ADC você deve modificar o `CMakeLists.txt` adicionando `hardware_adc` no `target_link_libraries`:
 
 ```diff
 target_link_libraries(

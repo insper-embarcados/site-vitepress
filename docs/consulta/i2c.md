@@ -1,7 +1,7 @@
 ## Introdução ao I2C
 O I2C (Inter-Integrated Circuit) é um protocolo de comunicação serial síncrona que permite a comunicação entre microcontroladores e dispositivos periféricos utilizando apenas dois pinos: um chamado de **SDA** (Serial Data Line) e uma linha de clock **SCL** (Serial Clock Line). Ele foi desenvolvido pela Philips Semiconductor (atualmente NXP Semiconductors) nos anos 80.
 
-Breve Lista de alguns sensores que possuem comunicação I2C:
+Breve lista de alguns sensores que possuem comunicação I2C:
 
 - [BMP280](https://www.adafruit.com/product/2651): Sensor de pressão barométrica que pode ser usado para medir temperatura e pressão atmosférica com alta precisão.
 - [HTU21D-F](https://www.adafruit.com/product/1899): Sensor de temperatura e umidade que oferece medições de alta precisão em um pequeno pacote, ideal para aplicações meteorológicas.
@@ -19,7 +19,7 @@ Para usar o I2C, é necessário conectar os dispositivos em uma infraestrutura d
 É possível conectar um único dispositivo controlador a vários dispositivos em paralelo, formando uma topologia conhecida como "varal". Para possibilitar essa conexão, cada dispositivo é identificado por um endereço de 7 bits único.
 
 ::: warning
-Notem que o protocolo i2c exige que a linha tenha um `pull-up`
+Notem que o protocolo I2C exige que a linha tenha um `pull-up`
 :::
 
 ## Protocolo
@@ -51,9 +51,9 @@ Se o controlador (controlador-transmissor) estiver escrevendo para o dispositivo
 
 ![i2cCOMPORTAMENTO](imgs/i2cCOMPORTAMENTO.png)
 
-## RP2350
+## RP2040
 
-O RP2350, possui duas interfaces I2C idênticas (I2C0 e I2C1). Ambas são capazes de gerar sinais de clock, iniciar e encerrar comunicações (no modo mestre), apresentam filas de até dezesseis posições para entrada e saída, e suportam o uso de DMA. No modo dispositivo ("slave"), as interfaces podem verificar os endereços e disparar uma interrupção quando uma comunicação do mestre é recebida.
+O RP2040 possui duas interfaces I2C idênticas (I2C0 e I2C1). Ambas são capazes de gerar sinais de clock, iniciar e encerrar comunicações (no modo mestre), apresentam filas de até dezesseis posições para entrada e saída, e suportam o uso de DMA. No modo dispositivo ("slave"), as interfaces podem verificar os endereços e disparar uma interrupção quando uma comunicação do mestre é recebida.
 
 Os pinos do RP2040 utilizados para comunicação I2C são configuráveis. A imagem abaixo apresenta as opções disponíveis:
 
@@ -61,7 +61,7 @@ Os pinos do RP2040 utilizados para comunicação I2C são configuráveis. A imag
 
 ## SDK
 
-Para usar o I2C você deve modificar o `CMakeLists.txt` adicionando `hardware_adc` no `target_link_libraries`:
+Para usar o I2C você deve modificar o `CMakeLists.txt` adicionando `hardware_i2c` no `target_link_libraries`:
 
 ```diff
 target_link_libraries(
@@ -70,7 +70,7 @@ target_link_libraries(
 +                     hardware_i2c)
 ```
 
-    E adicionar no headfile:
+E adicionar no headfile:
 
 ```c
 #include "hardware/i2c.h"
@@ -83,5 +83,5 @@ WIP
 ## Referências:
 
 - "Usando I2C na Raspberry Pi Pico com MicroPython e C" Maker Hero. Disponível em: https://www.makerhero.com/blog/usando-i2c-na-raspberry-pi-pico/
-
+- "Raspberry Pi Pico (RP2040) I2C Example with MicroPython and C/C++" DigiKey. Disponível em: https://www.digikey.com/en/maker/projects/raspberry-pi-pico-rp2040-i2c-example-with-micropython-and-cc/47d0c922b79342779cdbd4b37b7eb7e2
 - "Raspberry Pi Pico (RP2040) I2C Example with MicroPython and C/C++" DigiKey. Disponível em: https://www.digikey.com/en/maker/projects/raspberry-pi-pico-rp2040-i2c-example-with-micropython-and-cc/47d0c922b79342779cdbd4b37b7eb7e2

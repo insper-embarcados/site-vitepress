@@ -37,6 +37,16 @@ const members = [
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/danielmpinto' }
     ]
 
+  },
+  {
+    avatar: 'https://github.com/LuisHFB.png',
+    name: 'Luis Bueno',
+    title: 'Técnico Sr. de Laboratório',
+    links: [
+      { icon: 'github', link: 'https://github.com/LuisHFB' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/lu%C3%ADs-henrique-fonseca-bueno-65a8315b/' }
+    ]
+
   }
   ]
 </script>
