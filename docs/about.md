@@ -1,8 +1,8 @@
 # Sobre o curso
 
-- **Curso:** Engenharia Da Computação - Quinto Semestre - [Insper](https://www.insper.edu.br/)
+- **Curso:** Engenharia de Computação - Quinto Semestre - [Insper](https://www.insper.edu.br/)
 - **Disciplina:** Computação Embarcada 
-- **Organização no github:** [http:/https://github.com/insper-embarcados/](https://github.com/insper-embarcados/)
+- **Organização no GitHub:** [https://github.com/insper-embarcados/](https://github.com/insper-embarcados/)
 - **© Todos os direitos reservados**
 
 **Equipe:**
@@ -49,15 +49,15 @@ const members = [
     - Ágil 2 (`segunda-feira`)
     - Laboratórios de Arquitetura de Computadores (`quarta e quinta-feira`)
 
-A disciplina acontece às segundas feiras 14h no laboratório ágil 2 de computadores com a turma toda, e às quartas 9h45 e quinta feira 16h00 com metade da turma no laboratório de arquitetura de computadores.
+A disciplina acontece às segundas-feiras, 14h, no laboratório Ágil 2 de computadores com a turma toda, e às quartas, 9h45, e quintas-feiras, 16h00, com metade da turma no laboratório de Arquitetura de Computadores.
 
 ## Objetivos da matéria
 
-Ao final da disciplina vocês (alunos) devem ser capaz de:
+Ao final da disciplina vocês (alunos) devem ser capazes de:
 
 1. Criar softwares para microcontroladores utilizando suas especificidades;
 2. Avaliar e melhorar soluções embarcadas integrando hardware/software levando em conta adequação a uma aplicação;
-3. Integrar em um protótipo hardware, software básico, sistema operacional de tempo real e módulos de interfaceamento com usuários, de comunicação e de alimentação  image:
+3. Integrar em um protótipo hardware, software básico, sistema operacional de tempo real e módulos de interfaceamento com usuários, de comunicação e de alimentação.
 4. Compreender as limitações de microcontroladores e seus periféricos;
 5. Buscar e analisar documentação (datasheet) e extrair informações relevantes.
 
