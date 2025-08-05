@@ -39,7 +39,7 @@ Programas para sistemas embarcados devem seguir algumas diretrizes fundamentais 
 Existem várias normas estabelecidas para orientar os desenvolvedores na criação de firmwares mais confiáveis, abordando inclusive problemas associados à especificação da linguagem C. 
 
 ::: info underfined behaviors
-Os comportamentos indefinidos (undefined behaviors) na linguagem de programação C ocorrem quando o padrão da linguagem não especifica como o programa deve se comportar em determinadas circunstâncias. Isso pode ser resultado de ações como: divisão por zero, acesso a ponteiros nulos, estouro de buffer, entre outros. Esses comportamentos podem levar a resultados imprevisíveis e causar problemas de segurança ou falhas no programa. Para minimizar tais riscos, é importante seguir as melhores práticas de programação e estar atento a possíveis comportamentos indefinidos ao escrever e revisar seu código.
+Os comportamentos indefinidos (undefined behaviors) na linguagem de programação C ocorrem quando o padrão da linguagem não especifica como o programa deve se comportar em determinadas circunstâncias. Isso pode ser o resultado de ações como: divisão por zero, acesso a ponteiros nulos, estouro de buffer, entre outros. Esses comportamentos podem levar a resultados imprevisíveis e causar problemas de segurança ou falhas no programa. Para minimizar tais riscos, é importante seguir as melhores práticas de programação e estar atento a possíveis comportamentos indefinidos ao escrever e revisar seu código.
     
 Neste roteiro não vamos nos atentar a formatacão do código (nomenclatura, estilo). 
 :::

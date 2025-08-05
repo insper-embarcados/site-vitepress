@@ -18,9 +18,9 @@ xx/08
 ::::
 :::::
 
-Nesse laboratório vocês irão aplicar os conceitos do pré lab (leitura e acionamento de um pino) para controlar um motor de passos. 
+Nesse laboratório vocês irão aplicar os conceitos do pré-lab (leitura e acionamento de um pino) para controlar um motor de passos.
 
-A ideia geral é que vocês possuam um botão, um LED e o motor de passos conectado na placa, toda vez que o botão for pressionado o LED deve acender e o motor girar 360 graus para uma direção de sua escolha. O sistema deve funcionar alimentado por bateria (não aceitaremos demos com ele ligado no PC).
+A ideia geral é que vocês possuam um botão, um LED e o motor de passos conectado na placa. Toda vez que o botão for pressionado, o LED deve acender e o motor girar 360 graus para uma direção de sua escolha. O sistema deve funcionar alimentado por bateria (não aceitaremos demos com ele ligado no PC).
 
 :::tabs
 == Montagem
@@ -36,14 +36,14 @@ Para isso, vocês vão precisar de:
 | 1x Rasp pico                    | R$ 40   |
 | 1x debug-probe                  | R$ 120  |
 | 1x Motor de passos com driver   | R$ 18   |
-| 1x Push buttons                 | R$ 0.20 |
-| 1x LED (escolha a cor)          | R$ 0.1  |
+| 1x Push button                  | R$ 0,20 |
+| 1x LED (escolha a cor)          | R$ 0,10 |
 | 1x Resistor entre 100 e 380 ohm | R$ ~    |
 
 ::: info Motor de passos
-O motor de passos que iremos usar é o motor [28BYJ-48](https://www.makerhero.com/img/files/download/Datasheet_28BYJ-48.pdf) e alimentação de 5V e redução de 1/64, isto significa que é possível dar uma volta completa com 2048 passos, ou seja, apenas ~0,176° por passo. O motor precisa de um driver de potência para que possamos controlar via um microcontrolador, no caso iremos usar o [Uln2003](https://www.makerhero.com/img/files/download/ULN2003A-Datasheet.pdf).
+O motor de passos que iremos usar é o motor [28BYJ-48](https://www.makerhero.com/img/files/download/Datasheet_28BYJ-48.pdf), de alimentação 5V e redução de 1/64. Isto significa que é possível dar uma volta completa com 2048 passos, ou seja, apenas ~0,176° por passo. O motor precisa de um driver de potência para que possamos controlá-lo via microcontrolador, no caso iremos usar o [ULN2003](https://www.makerhero.com/img/files/download/ULN2003A-Datasheet.pdf).
 
-No Brasil este motor custa em torno de R$18,00.
+No Brasil, este motor custa em torno de R$18,00.
 
 Refs:
 
@@ -53,13 +53,13 @@ Refs:
 
 ## Dicas
 
-A seguir algumas dicas, você pode ou não seguir:
+A seguir, algumas dicas que você pode ou não seguir:
 
-1. Comece colocando um LED e fazendo ele piscar!
-1. Adicione o botão, e toda vez que ele for apertado pisque o LED.
+1. Comece colocando um LED e fazendo-o piscar!
+1. Adicione o botão e, toda vez que ele for apertado, pisque o LED.
 1. Agora estude o básico sobre [motor de passos](https://howtomechatronics.com/tutorials/arduino/stepper-motors-and-arduino-the-ultimate-guide/).
-1. Conecte o motor na placa e faca ele girar!
-    - Use lógica similar ao `exe4` do pré lab.
+1. Conecte o motor na placa e faça-o girar!
+    - Use lógica similar ao `exe4` do pré-lab.
 1. Implemente o resto da lógica.
 
 ::: info
@@ -78,4 +78,4 @@ Gostou e quer fazer mais? Que tal:
 
 - Colocar mais um botão e fazer girar para o outro lado
 - Enquanto estiver girando e o botão for apertado, pare. Se apertado novamente, termine a rotação.
-- Adicione mais LEDs e crie uma árvore de natal!
+- Adicione mais LEDs e crie uma árvore de Natal!
