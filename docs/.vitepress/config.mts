@@ -10,6 +10,7 @@ export default defineConfig({
       math: true
   },
   themeConfig: {
+    logo: "/favicon.svg",
     search: {
       provider: 'local'
     },
@@ -39,6 +40,7 @@ export default defineConfig({
         {
           text: 'Material de consulta',
           items: [
+            { text: 'Sobre', link: '/consulta/' },
             { text: 'Pico 2', link: 'https://www.raspberrypi.com/products/raspberry-pi-pico-2/' },
             { text: 'RP2350', link: 'https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf'},
             { text: 'SDK', link: 'https://www.raspberrypi.com/documentation/pico-sdk/index_doxygen.html' },
