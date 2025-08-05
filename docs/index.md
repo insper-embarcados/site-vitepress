@@ -10,9 +10,6 @@ hero:
     - theme: brand
       text: Sobre o curso
       link: /about
-    - theme: alt
-      text: API Examples
-      link: /api-examples
   image:
     src: /logo.svg
     alt: Insper
@@ -20,13 +17,15 @@ hero:
 features:
   - title: Raspberry pi pico
     details: Kit de desenvolvimento utilizado no curso
-  - title: 
-    details: Kit de desenvolvimento utilizado no curso
   - title: Testes
     details: Disciplina com sistema automatizado de testes
   - title: Freertos
     details: O curso ensina sistema operacional de tempo real (RTOS)
   - title: Qualidade de código
-    details: O curso possui um sistema de qualidade de código
+    details: O curso possui um sistema de qualidade de código.
+  - title: Labs
+    details: Laboratórios práticos e teóricos
+  - title: Projetos
+    details: Projetos complexos e abertos
 ---
 
