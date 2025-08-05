@@ -31,11 +31,11 @@ features:
 
 # Laboratórios
 
-Os laboratórios são compostos de duas entregas individuais: uma que deve acontecer até o dia do laboratório (chamada de pré lab) e outro que deve ser iniciada durante a aula (chamada de pra lab).
+Os laboratórios são compostos de duas entregas individuais: uma que deve acontecer até o dia do laboratório (chamada de pré-lab) e outra que deve ser iniciada durante a aula (chamada de pra-lab).
 
 ## Lab preparatório
 
-As atividades de pré lab são compostas de duas frentes, uma que trata da qualidade de código em sistemas embarcados, e outro que lida com a parte de programacão do microcontrolador em um ambiente simulado. 
+As atividades de pré-lab são compostas de duas frentes: uma que trata da qualidade de código em sistemas embarcados e outra que lida com a parte de programação do microcontrolador em um ambiente simulado.
 
 Para saber mais sobre cada uma das frentes, acesse:
 
@@ -46,7 +46,7 @@ Para saber mais sobre cada uma das frentes, acesse:
 
 As atividades de laboratório prático demandam que vocês utilizem a placa física e apliquem o que foi estudado nas atividades preparatórias.
 
-Para saber mais sobre a atividade prática acesse:
+Para saber mais sobre a atividade prática, acesse:
 
 - [Pra lab](/labs/pratico)
 
@@ -54,4 +54,4 @@ Para saber mais sobre a atividade prática acesse:
 
 ![](imgs/sobre.png)
 
-Todos os códigos serão desenvolvido no computador do aluno e testados automáticamente no github. Todas as entregas devem ser realizados no github e publicadas no PrairieLearn.
+Todos os códigos serão desenvolvidos no computador do aluno e testados automaticamente no GitHub. Todas as entregas devem ser realizadas no GitHub e publicadas no PrairieLearn.

@@ -3,16 +3,16 @@ sidebar: true
 hero:
   name: "Lab 1" 
   text: "General Purpose Input/Output (GPIO)" 
-  tagline: Nesse laboratório iremos aprender como acionar e ler os pinos digitais do microcontrolador. E junto com isso iremos aprender boas práticas de desenvolvimento de firmware.
+  tagline: Neste laboratório, iremos aprender como acionar e ler os pinos digitais do microcontrolador. Junto com isso, aprenderemos boas práticas de desenvolvimento de firmware.
 ---
 
 # Lab 1 - GPIO
 
-Nesse laboratório iremos aprender como acionar e ler os pinos digitais do microcontrolador. E junto com isso iremos aprender boas práticas de desenvolvimento de firmware.
+Neste laboratório, iremos aprender como acionar e ler os pinos digitais do microcontrolador. Junto com isso, aprenderemos boas práticas de desenvolvimento de firmware.
 
-## Préparatório <Badge type="info" text="50% da nota de lab" /> 
+## Preparatório <Badge type="info" text="50% da nota de lab" /> 
 
-Entregas que devem ser ****realizadas**** antes da aula de laboratório. Notem que esse laboratório possui 3 atividades de pré lab, todas com entregas.
+Entregas que devem ser realizadas antes da aula de laboratório. Note que este laboratório possui 3 atividades de pré-lab, todas com entregas.
 
 Comece pelos dois exercícios de qualidade de código:
 
@@ -31,7 +31,7 @@ Acessar [variáveis](/qualidade/variables)
 ::::
 :::::
 
-Agora iremos aprender sobre os conceitos básicos do microcontrolador. Para isso é necessário que vocês realizem algumas leituras prévias. 
+Agora, iremos aprender sobre os conceitos básicos do microcontrolador. Para isso, é necessário que vocês realizem algumas leituras prévias.
 
 ::::: center
 :::: third
@@ -48,7 +48,7 @@ Agora iremos aprender sobre os conceitos básicos do microcontrolador. Para isso
 ::::
 :::::
 
-Agora que vocês já entenderam um pouco sobre o delay/sleep e o GPIO vamos praticar um pouco.
+Agora que vocês já entenderam um pouco sobre delay/sleep e GPIO, vamos praticar um pouco.
 
 ::::: center
 :::: third
@@ -62,9 +62,9 @@ Acessar [exercícios](https://classroom)
 ::::
 :::::
 
-## Prática  <Badge type="info" text="50% da nota de lab" /> 
+## Prática <Badge type="info" text="50% da nota de lab" />
 
-Entrega que deve ser **iniciada** na aula de laboratório e entregue até o próximo lab. 
+Entrega que deve ser **iniciada** na aula de laboratório e entregue até o próximo lab.
 
 ::::: center
 :::: third

@@ -18,9 +18,9 @@ xx/08
 ::::
 :::::
 
-Nesse laboratório vocês irão aplicar os conceitos do pré-lab (leitura e acionamento de um pino) para controlar um motor de passos.
+Neste laboratório, vocês irão aplicar os conceitos do pré-lab (leitura e acionamento de um pino) para controlar um motor de passos.
 
-A ideia geral é que vocês possuam um botão, um LED e o motor de passos conectado na placa. Toda vez que o botão for pressionado, o LED deve acender e o motor girar 360 graus para uma direção de sua escolha. O sistema deve funcionar alimentado por bateria (não aceitaremos demos com ele ligado no PC).
+A ideia geral é que vocês tenham um botão, um LED e o motor de passos conectado na placa. Toda vez que o botão for pressionado, o LED deve acender e o motor girar 360 graus para uma direção de sua escolha. O sistema deve funcionar alimentado por bateria (não aceitaremos demonstrações com ele ligado no PC).
 
 :::tabs
 == Montagem
@@ -41,9 +41,9 @@ Para isso, vocês vão precisar de:
 | 1x Resistor entre 100 e 380 ohm | R$ ~    |
 
 ::: info Motor de passos
-O motor de passos que iremos usar é o motor [28BYJ-48](https://www.makerhero.com/img/files/download/Datasheet_28BYJ-48.pdf), de alimentação 5V e redução de 1/64. Isto significa que é possível dar uma volta completa com 2048 passos, ou seja, apenas ~0,176° por passo. O motor precisa de um driver de potência para que possamos controlá-lo via microcontrolador, no caso iremos usar o [ULN2003](https://www.makerhero.com/img/files/download/ULN2003A-Datasheet.pdf).
+O motor de passos que iremos usar é o modelo [28BYJ-48](https://www.makerhero.com/img/files/download/Datasheet_28BYJ-48.pdf), de alimentação 5V e redução de 1/64. Isso significa que é possível dar uma volta completa com 2048 passos, ou seja, apenas ~0,176° por passo. O motor precisa de um driver de potência para que possamos controlá-lo via microcontrolador; no caso, iremos usar o [ULN2003](https://www.makerhero.com/img/files/download/ULN2003A-Datasheet.pdf).
 
-No Brasil, este motor custa em torno de R$18,00.
+No Brasil, este motor custa em torno de R$ 18,00.
 
 Refs:
 
@@ -56,8 +56,8 @@ Refs:
 A seguir, algumas dicas que você pode ou não seguir:
 
 1. Comece colocando um LED e fazendo-o piscar!
-1. Adicione o botão e, toda vez que ele for apertado, pisque o LED.
-1. Agora estude o básico sobre [motor de passos](https://howtomechatronics.com/tutorials/arduino/stepper-motors-and-arduino-the-ultimate-guide/).
+1. Adicione o botão e, toda vez que ele for pressionado, pisque o LED.
+1. Agora, estude o básico sobre [motor de passos](https://howtomechatronics.com/tutorials/arduino/stepper-motors-and-arduino-the-ultimate-guide/).
 1. Conecte o motor na placa e faça-o girar!
     - Use lógica similar ao `exe4` do pré-lab.
 1. Implemente o resto da lógica.

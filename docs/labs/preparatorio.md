@@ -1,9 +1,9 @@
-# Laboratórios preparatório
+# Laboratório preparatório
 
-A disciplina utilizará atividades preparatórias que ajudarão vocês no desenvolvimento dos laboratórios. Essas atividades devem ser realizadas no VSCode e **não necessitam do uso da placa de desenvolvimento**. O objetivo é desacoplar um pouco os elementos; com o simulador, é possível praticar apenas o código e alguns aspectos da conexão de hardware, sem a complexidade de montar os componentes eletrônicos.
+A disciplina utilizará atividades preparatórias que ajudarão vocês no desenvolvimento dos laboratórios. Essas atividades devem ser realizadas no VSCode e **não necessitam do uso da placa de desenvolvimento**. O objetivo é desacoplar um pouco os elementos: com o simulador, é possível praticar apenas o código e alguns aspectos da conexão de hardware, sem a complexidade de montar os componentes eletrônicos.
 
 ::: info
-Ao abrir o projeto, você deve importar o mesmo na extensão da rasp pico!!
+Ao abrir o projeto, você deve importar o mesmo na extensão da Raspberry Pi Pico!
 :::
 
 <YouTube id="io7dd_pljyY"/>
@@ -18,16 +18,16 @@ Esta entrega possui verificação automática. Para validar a entrega, envie o c
     - cppcheck *(erros básicos de linguagem C)*
     - embedded-check *(erros conceituais de sistemas embarcados)*
 
-Vocês devem obter o seguinte resultado no actions:
+Vocês devem obter o seguinte resultado no Actions:
 
 ![](imgs/lab_pre_actions.png)
 
 ## Enviando para avaliação
 
-Após terminar os exercícios o mesmo deve ser submetido para avaliação na plataforma do PrairieLearn, que irá utilizar o log do github action e liberar a nota final da atividade. Para enviar a atividade, basta copiar o link do repositório do classroom e enviar para receber a nota.
+Após terminar os exercícios, o mesmo deve ser submetido para avaliação na plataforma do PrairieLearn, que irá utilizar o log do GitHub Actions e liberar a nota final da atividade. Para enviar a atividade, basta copiar o link do repositório do classroom e enviar para receber a nota.
 
 ::: danger Punição de atraso
-As punicões de atraso serão aplicadas automaticamente pelo PrairiLearn.
+As punições de atraso serão aplicadas automaticamente pelo PrairieLearn.
 
 - -50% se entregue com até `dois dias de atraso`
 - -70% se entregue com até `quatro dias de atraso`
