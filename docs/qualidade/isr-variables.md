@@ -9,7 +9,7 @@ Devemos seguir algumas regras básicas quando desenvolvemos código que faz uso 
 
 ## Variáveis volatile
 
-Interrupção é normalmente um evento gerado pelo hardware e que por consequência executa uma função de `Handler` sem que o compilador tenha conhecimento disso (por ser um evento externo ao software). Por conta dessa caracteristica temos que tomar um cuidado especial com as variáveis que são acessadas dessa função que é chamada pelo hardware.
+Interrupção é normalmente um evento gerado pelo hardware e que, por consequência, executa uma função de `Handler` sem que o compilador tenha conhecimento disso (por ser um evento externo ao software). Por conta dessa característica, temos que tomar um cuidado especial com as variáveis que são acessadas por essa função chamada pelo hardware.
 
 !!! tip "Rule 1.2"
     Todas as variáveis globais acessadas de uma interrupção (ISR) devem possuir a keyword: `volatile`
@@ -24,8 +24,8 @@ Essas regras podem ser flexibilizadas quando desejamos acessar periféricos e me
 O exemplo a seguir demonstra um ==uso errado== da keyword `volatile`:
 
 - `btn_callback`: É uma função de interrupção chamada pelo Hardware!
-- `f_btn`: É uma variável global modificada pelo um evento no pino do botão, deveria ser `volatile`
-- `cnt`: É apenas um contador não devemos interferir no processo de compilação.
+- `f_btn`: É uma variável global modificada por um evento no pino do botão, deveria ser `volatile`
+- `cnt`: É apenas um contador, não devemos interferir no processo de compilação.
 
 ```c
 

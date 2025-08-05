@@ -3,19 +3,19 @@
 ::: tip Rule 1.0
 O código não deve possuir erros detectados pelo `cppcheck`.
 
-**Racional:** Removendo erros detectado pelo analisador estático facilita a depuração e faz com o que projeto funcione mais rapidamente.
+**Racional:** Remover erros detectados pelo analisador estático facilita a depuração e faz com que o projeto funcione mais rapidamente.
 :::
 
 ::: tip Rule 1.1
 Somente usar variáveis globais para passar informações de uma interrupção (ISR) para a função `main`.
 
-**Racional:** Está regra evita que você use variáveis globais onde elas poderiam ser locais.
+**Racional:** Esta regra evita que você use variáveis globais onde elas poderiam ser locais.
 :::
 
 ::: tip Rule 1.2
 Todas as variáveis globais acessadas de uma interrupção (ISR) devem possuir a keyword: `volatile`
 
-**Racional:** O volatile indica para o compilador não otimizar a variável em questão que está sendo modificada por um evento gerado pelo hardware e que o compilador não tem conhecimento.
+**Racional:** O `volatile` indica para o compilador não otimizar a variável em questão que está sendo modificada por um evento gerado pelo hardware e que o compilador não tem conhecimento.
 :::
 
 ::: tip Rule 1.3
