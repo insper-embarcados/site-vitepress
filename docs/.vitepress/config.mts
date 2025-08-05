@@ -10,7 +10,7 @@ export default defineConfig({
       math: true
   },
   themeConfig: {
-    logo: "/favicon.svg",
+    logo: "/imgs/favicon.svg",
     search: {
       provider: 'local'
     },
