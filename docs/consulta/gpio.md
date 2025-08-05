@@ -25,14 +25,14 @@ Usaremos o termo **atuadores** para tudo que o microcontrolador acionar/controla
 
 ## Periférico
 
-O periférico é responsável por controlar digitalmente um pino da rp2040 e interligar os pinos aos periféricos internos do microcontrolador. Os pinos da rp2040 são divididos em dois bancos, porem um dos bancos é dedicado a leitura do programa de uma memória FLASH (`QSPI` bank), sobrando apenas o banco `GPI0` para o desenvolvedor. Este banco possui 30 pinos (`GPIO0` .. `GPIO29`) que podem ser usados tanto como entrada quanto como saída.
+O periférico é responsável por controlar digitalmente um pino da rasp pico e interligar os pinos aos periféricos internos do microcontrolador. Os pinos da rp2040 são divididos em dois bancos, porem um dos bancos é dedicado a leitura do programa de uma memória FLASH (`QSPI` bank), sobrando apenas o banco `GPI0` para o desenvolvedor. Este banco possui 30 pinos (`GPIO0` .. `GPIO29`) que podem ser usados tanto como entrada quanto como saída.
 
 O GPIO opera como um mux, permitindo que outros periféricos internos do microcontrolador também acessem os pinos, como ilustrado na figura abaixo extraído do manual:
 
 ![](imgs/gpio-logic.svg)
 
 ::: warning
-Conforme manual respeite a tensão máxima de `3.3V` no pino da rp2040:
+Conforme manual respeite a tensão máxima de `3.3V` no pino da rasp pico:
 
 ![](imgs/gpio-electrical.svg)
 

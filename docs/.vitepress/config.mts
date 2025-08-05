@@ -37,8 +37,12 @@ export default defineConfig({
         {
           text: 'Material de consulta',
           items: [
+            { text: 'Pico 2', link: 'https://www.raspberrypi.com/products/raspberry-pi-pico-2/' },
+            { text: 'RP2350', link: 'https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf'},
+            { text: 'SDK', link: 'https://www.raspberrypi.com/documentation/pico-sdk/index_doxygen.html' },
             { text: 'Delay', link: '/consulta/delay' },
-            { text: 'GPIO', link: '/consulta/gpio' }
+            { text: 'GPIO', link: '/consulta/gpio' },
+            { text: 'GPIO IRQ', link: '/consulta/gpio-irq' }
           ]
         }
       ],
