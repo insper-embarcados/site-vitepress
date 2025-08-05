@@ -146,9 +146,9 @@ Códigos de exemplo para o UART.
 
 ### Hello UART
 
-[Simulação no wokwi](/definir/link){.ah-button}
+[Simulação no wokwi]()
 /
-[pico-examples/dma/hello_dma/hello_dma.c](https://github.com/raspberrypi/pico-examples/blob/master/uart/hello_uart/hello_uart.c){.ah-button}
+[pico-examples/dma/hello_dma/hello_dma.c](https://github.com/raspberrypi/pico-examples/blob/master/uart/hello_uart/hello_uart.c)
 
 ```c
 /**

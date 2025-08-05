@@ -36,7 +36,7 @@ O led on-board é controlado pelo GPIO25 no Pico padrão. No Pico W, este GPIO �
 Vamos utilizar a interface do CYW43439 para fazer um pisca led. O intuito é entender as configurações básicas para desenvolvimento de aplicações utilizando a versão Pico W.  
 
 ::: info
-Consulte a página do site da disciplina [Pico W/pico-examples](/site/pico/pico-examples) para saber como usar o repositório de exemplos da pico!
+Consulte a página do site da disciplina [Pico W/pico-examples](/consulta/pico-examples) para saber como usar o repositório de exemplos da pico!
 :::
 
 ### SDK
@@ -314,4 +314,4 @@ Agora você já está pronto para desbravar o mundo do WIFI explorando novas pos
 
 Sugestão:
 
-- Explore os exemplos de wifi do [repositório de exemplos da pico](https://github.com/raspberrypi/pico-examples/blob/master/pico_w/wifi)
+- Explore os exemplos de wifi do [repositório de exemplos da pico](/consulta/pico-examples)

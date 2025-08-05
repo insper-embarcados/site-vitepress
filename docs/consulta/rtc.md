@@ -1,8 +1,6 @@
 # RTC - Real Time Clock
 
-O RTC é um periférico que muitos microcontroladores possuem e foi desenvolvido para contar o tempo como um relógio e calendário. A base de tempo do RTC é de 1 segundo e, a partir de uma data definida como inicial, ele passa a fazer todas as contas de horas e dias. Em produtos, o RTC é normalmente alimentado por um sistema de baterias independentes, geralmente uma bateria [CR padrão]()[^1].
-
-[^1]: ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFSarKUSO8fk3HzK7CMIDW8KkChF-hckjqTA&usqp=CAU)
+O RTC é um periférico que muitos microcontroladores possuem e foi desenvolvido para contar o tempo como um relógio e calendário. A base de tempo do RTC é de 1 segundo e, a partir de uma data definida como inicial, ele passa a fazer todas as contas de horas e dias. Em produtos, o RTC é normalmente alimentado por um sistema de baterias independentes, geralmente uma bateria [CR padrão].
 
 ::: info
 Já se perguntou por que, mesmo quando a bateria do seu notebook acaba, ao ligar, a hora e o dia da semana estão sempre certos? Seu notebook possui um RTC alimentado por uma bateria independente que pode durar meses com a mesma carga, pois ela só alimenta o RTC. Quando você liga novamente o seu computador, a BIOS lê o valor do RTC e atualiza o seu sistema operacional!

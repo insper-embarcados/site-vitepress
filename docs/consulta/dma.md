@@ -122,7 +122,7 @@ Códigos de exemplo para o DMA.
 
 ### Hello DMA
 
-[Simulação no wokwi](/definir/link){.ah-button}
+[Simulação no wokwi](){.ah-button}
 /
 [pico-examples/dma/hello_dma/hello_dma.c](https://github.com/raspberrypi/pico-examples/blob/master/dma/hello_dma/hello_dma.c){.ah-button}
 
