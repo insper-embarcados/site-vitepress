@@ -9,8 +9,9 @@ export default defineConfig({
   markdown: {
       math: true
   },
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
-    logo: "/.favicon.svg",
+    logo: "/favicon.svg",
     search: {
       provider: 'local'
     },
