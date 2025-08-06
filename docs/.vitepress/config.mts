@@ -17,29 +17,30 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Labs', link: '/labs' },
       { text: 'Consulta', link: '/consulta/' },
-      { text: 'Qualidade de código', link: '/qualidade' },
+      { text: 'Entregas', link: '/entregas/' },
     ],
     sidebar: {
-      '/labs/': [
+      '/entregas/': [
+        {
+          text: 'Entregas',
+          items: [
+                { text: 'Sobre', link: '/entregas/' },
+                { text: 'Preparatório', link: '/labs/preparatorio' },
+                { text: 'Prático', link: '/labs/pratico' },
+          ]
+        },
         {
           text: 'Laboratórios',
           items: [
-            { text: 'Sobre', link: '/labs/' },
-            {
-              items: [
-                { text: 'Preparatório', link: '/labs/preparatorio' },
-                { text: 'Prático', link: '/labs/pratico' },
-              ]
-            },
-            { text: 'Lab 1 - GPIO', link: '/labs/gpio' }
+                { text: '1. GPIO', link: '/labs/gpio' },
           ]
         }
+
       ],
       '/consulta/': [
         {
-          text: 'Material de consulta',
+          text: 'Pico',
           items: [
             { text: 'Sobre', link: '/consulta/' },
             { text: 'Pinout ', link: 'https://www.raspberrypi.com/documentation/microcontrollers/images/pico-pinout.svg' },
@@ -47,7 +48,12 @@ export default defineConfig({
             { text: 'RP2350', link: 'https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf'},
             { text: 'SDK', link: 'https://www.raspberrypi.com/documentation/pico-sdk/index_doxygen.html' },
             { text: 'Programando  📀', link: '/consulta/pico-debugging' },
-            { text: 'Códigos Exemplos', link: '/consulta/pico-examples' },
+            { text: 'Códigos Exemplos', link: '/consulta/pico-examples' }
+          ]
+        },
+        {
+          text: 'Periféricos',
+          items: [
             { text: 'Delay', link: '/consulta/delay' },
             { text: 'GPIO', link: '/consulta/gpio' },
             { text: 'GPIO IRQ', link: '/consulta/gpio-irq' },
@@ -61,17 +67,15 @@ export default defineConfig({
             { text: 'UART', link: '/consulta/uart' },
             { text: 'WIFI', link: '/consulta/pico-wifi' },
           ]
-        }
-      ],
-      '/qualidade/': [
+        },
         {
           text: 'Qualidade de código',
           items: [
             { text: 'Sobre', link: '/qualidade/' },
             { text: 'Regras', link: '/qualidade/rules' },
-            { text: '1 - Cppcheck', link: '/qualidade/cppcheck' },
-            { text: '2 - Variáveis', link: '/qualidade/variables' },
-            { text: '3 - ISR', link: '/qualidade/isr-handler' }
+            { text: 'Cppcheck', link: '/qualidade/cppcheck' },
+            { text: 'Variáveis', link: '/qualidade/variables' },
+            { text: 'ISR', link: '/qualidade/isr-handler' }
           ]
         }
       ]

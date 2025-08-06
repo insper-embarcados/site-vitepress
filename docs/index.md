@@ -10,6 +10,13 @@ hero:
     - theme: brand
       text: Sobre o curso
       link: /about
+    - theme: alt
+      text: Consultas
+      link: /consulta/
+    - theme: alt
+      text: Entregas
+      link: /entregas/
+
   image:
     src: /favicon.svg
     alt: Insper
