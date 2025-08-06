@@ -11,7 +11,7 @@ hero:
       text: Sobre o curso
       link: /about
   image:
-    src: /imgs/favicon.svg
+    src: /favicon.svg
     alt: Insper
 features:
   - title: Raspberry pi pico
